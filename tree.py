@@ -6,5 +6,5 @@ def tree(path, level=0):
     if os.path.isdir(path):
         for file in os.listdir(path):
             tree(os.path.join(path, file), level+1)
-#ещё измеения новейшие просто
+
 tree('.')
